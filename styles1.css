@@ -1,0 +1,105 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #000; /* Black background */
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+.level-header {
+    background-color: #d32f2f; /* Red Header */
+    color: white;
+    padding: 1rem;
+    font-size: 1.8rem;
+}
+
+/* Alphabet & Number Learning Section */
+.alphabet-container, .number-container {
+    position: relative;
+    margin-top: 50px;
+}
+
+/* Text Display for Alphabet and Number */
+#alphabet, #number {
+    font-size: 5rem;
+    color: white;
+    margin-bottom: 10px;
+}
+
+/* Image Styling */
+#sign-image, #quiz-image {
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(255, 0, 0, 0.5); /* Red glow */
+    margin: 0 auto;
+    display: block;
+    position: relative;
+}
+
+/* Navigation Buttons */
+.nav-buttons {
+    margin-top: 20px;
+}
+
+.nav-buttons button {
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #d32f2f; /* Red Buttons */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.nav-buttons button:hover {
+    background-color: #b71c1c; /* Darker Red */
+}
+
+/* Quiz Section */
+.quiz-container {
+    display: none;
+    margin-top: 30px;
+}
+
+.options {
+    margin-top: 15px;
+}
+
+/* Quiz Option Buttons */
+.option-btn {
+    font-size: 1.5rem;
+    padding: 12px 20px;
+    margin: 5px;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: 2px solid red;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.option-btn:hover {
+    background-color: #d32f2f; /* Red */
+    color: white;
+}
+
+/* Quiz Feedback */
+#quiz-result {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.correct {
+    color: #4CAF50; /* Green for correct answer */
+}
+
+.wrong {
+    color: #d32f2f; /* Red for wrong answer */
+}

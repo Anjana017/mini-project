@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Sign Language Learning Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>SignLearn</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="login.html" class="login-button">Login</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="curriculum.html">Curriculum</a></li>
+                <li><a href="dictionary.html">Dictionary</a></li>
+                <li><a href="progress.html">Progress</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Learn Sign Language Interactively</h2>
+            <p>Master sign language with AI-driven tools, video tutorials, and personalized feedback.</p>
+            <a href="#curriculum" class="cta-button">Start Learning</a>
+        </div>
+    </section>
+
+    <!-- Curriculum Section -->
+    <section id="curriculum" class="curriculum">
+        <h2>Structured Curriculum</h2>
+        <div class="curriculum-grid">
+            <div class="card">
+                <i class="fas fa-video"></i>
+                <h3>Video Tutorials</h3>
+                <p>Learn from expert instructors with step-by-step video lessons.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-pencil-alt"></i>
+                <h3>Interactive Exercises</h3>
+                <p>Practice what you learn with hands-on exercises.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-question-circle"></i>
+                <h3>Quizzes</h3>
+                <p>Test your knowledge with quizzes after each lesson.</p>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- Chat Pop-up Window -->
+    <div class="chat-popup" id="chatPopup">
+        <div class="chat-header">
+            Chat Support
+            <span style="float: right; cursor: pointer;" onclick="toggleChatPopup()">&times;</span>
+        </div>
+        <div class="chat-body" id="chatBody">
+            <p><strong>Support Bot:</strong> Hello! How can I assist you today?</p>
+        </div>
+        <div class="chat-footer">
+            <input type="text" id="chatInput" placeholder="Type your message...">
+            <button onclick="sendMessage()"><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 SignLearn. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+    <!-- Botpress Chat Support Scripts -->
+    <script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
+    <script src="https://files.bpcontent.cloud/2025/03/16/13/20250316133729-M172V4E7.js"></script>
+</body>
+</html>

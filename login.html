@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function toggleForm(formType) {
+            document.getElementById("loginForm").style.display = formType === 'login' ? 'block' : 'none';
+            document.getElementById("signupForm").style.display = formType === 'signup' ? 'block' : 'none';
+        }
+
+        function loginUser(event) {
+            event.preventDefault();
+            // Ideally, validate credentials and authenticate
+            alert("Login successful! Redirecting to home page.");
+            window.location.href = "index.html";
+        }
+
+        function signupUser(event) {
+            event.preventDefault();
+            // Ideally, save user details securely
+            alert("Account created! Please log in.");
+            toggleForm('login');
+        }
+    </script>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Welcome</h2>
+        <div class="toggle-buttons">
+            <button onclick="toggleForm('login')">Sign In</button>
+            <button onclick="toggleForm('signup')">Sign Up</button>
+        </div>
+
+        <form id="loginForm" class="auth-form" onsubmit="loginUser(event)">
+            <h3>Sign In</h3>
+            <input type="text" id="loginUsername" placeholder="Username" required>
+            <input type="password" id="loginPassword" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+
+        <form id="signupForm" class="auth-form" style="display: none;" onsubmit="signupUser(event)">
+            <h3>Sign Up</h3>
+            <input type="email" id="signupEmail" placeholder="Email" required>
+            <input type="text" id="signupUsername" placeholder="Username" required>
+            <input type="password" id="signupPassword" placeholder="Password" required>
+            <button type="submit">Create Account</button>
+        </form>
+    </div>
+</body>
+</html>
